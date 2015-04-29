@@ -1,0 +1,367 @@
+<!doctype html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Home &ndash; Sureka Group</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel='stylesheet' href='css/flexslider.css'>
+<link rel='stylesheet' href='css/font-awesome.min.css'>
+<link rel='stylesheet' href='js/fancybox/source/jquery.fancybox.css'>
+<link rel='stylesheet' href='css/base.css'>
+<link rel='stylesheet' href='style.css'>
+<link rel='stylesheet' href='css/mediaqueries.css'>
+<link rel='stylesheet' href='colors/sureka.css'>
+<style>
+#footlinks span{
+	margin-left: 3em;
+}
+</style>
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="">
+	<link rel="apple-touch-icon" href="">
+	<link rel="apple-touch-icon" sizes="72x72" href="">
+	<link rel="apple-touch-icon" sizes="114x114" href="">
+
+	<script src="js/modernizr.js"></script>
+
+	
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+</head>
+<body>
+
+<div id="mobile-bar">
+	<a class="menu-trigger" href="#mobilemenu"></a>
+	<h1 class="mob-title">Home</h1>
+</div>
+
+<div id="page">
+
+	<header id="header">
+		<div id="top-head">
+			<div class="row">
+				<div class="six columns">
+					<span>Emergency telephone number: 800&ndash;800&ndash;555</span>
+				</div>
+
+				<div class="six columns">
+					<!-- socials -->
+				</div>
+			</div>
+		</div> <!-- #tophead -->
+
+		<div id="main-head">
+			<div class="row">
+				<div id="logo" class="four columns">
+					<img src="images/sg_logo.png" />
+					
+				</div>
+
+				<div class="eight columns">
+					<nav id="nav">
+	<ul id="navigation" class="group">
+		<li class="current-menu-item">
+			<a href="index.html">Home</a>
+		</li>
+		<li>
+			<a href="#">About Us</a>
+			<ul>
+				<li><a href="overview.html">Overview</a></li>
+				<li><a href="vision_values.html">Vision and Values</a></li>
+				<li><a href="brand.html">Brand</a></li>
+				<li><a href="leadership_team.html">Leadership Team</a></li>
+				<li><a href="heritage.html">Heritage</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Businesses</a>
+			<ul>
+				<li><a href="companies.html">Companies</a></li>
+				<li><a href="sectors.html">Sectors</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="csr.html">CSR</a>
+		</li>
+		<li>
+			<a href="#">Media</a>
+			<ul>
+				<li><a href="press_releases.html">Press Releases</a></li>
+				<li><a href="news.html">Sureka in the News</a></li>
+				<li><a href="press_kit.html">Press Kit</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Careers</a>
+			<ul>
+				<li><a href="apply.html">Apply</a></li>
+				<li><a href="life_at_sureka.html">Life at Sureka</a></li>
+				<li><a href="retirees.html">Retirees</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="contact.html">Contact</a>
+		</li>
+	</ul><!-- #navigation -->
+</nav><!-- #nav -->
+
+<div id="mobilemenu">
+<ul class="group">
+	<li class="current-menu-item">
+		<a href="#">Home</a>
+		<ul>
+			<li><a href="#">Normal</a></li>
+			<li><a href="#">Alternative</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="#">Menu Item</a>
+		<ul>
+			<li><a href="#">Submenu Item I</a></li>
+			<li><a href="#">Submenu Item II</a></li>
+			<li><a href="#">Submenu Item Little Longer</a></li>
+			<li><a href="#">Submenu Item</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="#">Menu Item Longer</a>
+		<ul>
+			<li><a href="#">Submenu Item I</a></li>
+			<li><a href="#">Submenu Item II</a>
+				<ul>
+					<li><a href="#">Third Level Menu Item</a></li>
+					<li><a href="#">Menu Item</a>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#">Menu Item</a>
+	</li>
+</ul>
+</div>
+				</div>
+			</div> <!-- #mainhead -->
+		</div>
+	</header>
+
+	<main id="content" class="nopad">
+		<section class="home-wgt-area">
+			<div class="row">
+				<div class="twelve columns">
+        			<h2>
+        				Privacy Policy
+        			</h2>
+        			<p>
+				
+        						This Privacy Policy governs the manner in which Park Chambers Ltd. collects, uses, maintains and discloses information collected from users (each, a "User") of the <a href="http://www.surekagroup.com">http://www.surekagroup.com</a> website ("Site"). This privacy policy applies to the Site and all products and services offered by Park Chambers Ltd..<br><br>
+			
+        						<b>Personal identification information</b><br><br>
+			
+        						We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our site, subscribe to the newsletter, respond to a survey, fill out a form, and in connection with other activities, services, features or resources we make available on our Site. Users may be asked for, as appropriate, name, email address, mailing address, phone number. Users may, however, visit our Site anonymously. We will collect personal identification information from Users only if they voluntarily submit such information to us. Users can always refuse to supply personally identification information, except that it may prevent them from engaging in certain Site related activities.<br><br>
+			
+        						<b>Non-personal identification information</b><br><br>
+			
+        						We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information.<br><br>
+			
+        						<b>Web browser cookies</b><br><br>
+			
+        						Our Site may use "cookies" to enhance User experience. User's web browser places cookies on their hard drive for record-keeping purposes and sometimes to track information about them. User may choose to set their web browser to refuse cookies, or to alert you when cookies are being sent. If they do so, note that some parts of the Site may not function properly.<br><br>
+			
+        						<b>How we use collected information</b><br><br>
+			
+        						Park Chambers Ltd. may collect and use Users personal information for the following purposes:<br>
+						
+        			</p>
+        						<ul>
+        						<li><i>- To improve customer service</i><br>
+        							Information you provide helps us respond to your customer service requests and support needs more efficiently.</li>
+        						<li><i>- To personalize user experience</i><br>
+        							We may use information in the aggregate to understand how our Users as a group use the services and resources provided on our Site.</li>
+        						<li><i>- To improve our Site</i><br>
+        							We may use feedback you provide to improve our products and services.</li>
+        						<li><i>- To process payments</i><br>
+        							We may use the information Users provide about themselves when placing an order only to provide service to that order. We do not share this information with outside parties except to the extent necessary to provide the service.</li>
+        						<li><i>- To run a promotion, contest, survey or other Site feature</i><br>
+        							To send Users information they agreed to receive about topics we think will be of interest to them.</li>
+        						<li><i>- To send periodic emails</i><br>
+        						We may use the email address to send User information and updates pertaining to their order. It may also be used to respond to their inquiries, questions, and/or other requests. If User decides to opt-in to our mailing list, they will receive emails that may include company news, updates, related product or service information, etc. If at any time the User would like to unsubscribe from receiving future emails, we include detailed unsubscribe instructions at the bottom of each email.</li>
+        						</ul>
+        			<p>			
+        						<b>How we protect your information</b><br><br>
+			
+        						We adopt appropriate data collection, storage and processing practices and security measures to protect against unauthorized access, alteration, disclosure or destruction of your personal information, username, password, transaction information and data stored on our Site.<br><br>
+			
+        						<b>Sharing your personal information</b><br><br>
+			
+        						We do not sell, trade, or rent Users personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners, trusted affiliates and advertisers for the purposes outlined above.We may use third party service providers to help us operate our business and the Site or administer activities on our behalf, such as sending out newsletters or surveys. We may share your information with these third parties for those limited purposes provided that you have given us your permission.<br><br>
+			
+        						<b>Third party websites</b><br><br>
+			
+        						Users may find advertising or other content on our Site that link to the sites and services of our partners, suppliers, advertisers, sponsors, licensors and other third parties. We do not control the content or links that appear on these sites and are not responsible for the practices employed by websites linked to or from our Site. In addition, these sites or services, including their content and links, may be constantly changing. These sites and services may have their own privacy policies and customer service policies. Browsing and interaction on any other website, including websites which have a link to our Site, is subject to that website's own terms and policies.<br><br>
+			
+        						<b>Changes to this privacy policy</b><br><br>
+			
+        						Park Chambers Ltd. has the discretion to update this privacy policy at any time. When we do, we will post a notification on the main page of our Site, revise the updated date at the bottom of this page. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.<br><br>
+			
+        						<b>Your acceptance of these terms</b><br><br>
+			
+        						By using this Site, you signify your acceptance of this policy and <a href="http://www.surekagroup.com/tos.html">terms of service</a>. If you do not agree to this policy, please do not use our Site. Your continued use of the Site following the posting of changes to this policy will be deemed your acceptance of those changes.<br><br>
+			
+        						<b>Contacting us</b><br><br>
+			
+        						If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us at:<br>
+        						<br>
+        							<p>
+        								<strong>Sureka Group</strong><br>
+        								<a href="http://www.surekagroup.com">http://www.surekagroup.com</a><br>
+        								Park Chambers Ltd.<br>
+        								3/1 Loudon Street<br>
+        								Kolkata, 700 017<br>
+        								033 2287 1221<br>
+        								support@surekagroup.com<br>
+        							</p>
+        						<br>
+        						This document was last updated on May 20, 2014<br><br>
+			
+        						<div style="font-size:10px;color:gray;">Privacy policy created by <a style="font-size:10px;color:gray;text-decoration:none;cursor:default;" href="http://www.generateprivacypolicy.com" target="_blank">Generate Privacy Policy</a></div>
+        						</p>
+				</div>
+			</div>
+			
+		</section>
+	</main>
+
+
+<footer id="footer">
+	<div class="footer-inner">
+		<div class="row">
+			<div class="three columns">
+				<aside class="widget widget_ci_about group">
+	<h3 class="widget-title">Relevant Links</h3>
+	<div class="widget_about group">
+		<ul>
+			<li><a href="">Vision and Values</a></li>
+			<li><a href="">Heritage</a></li>
+			<li><a href="">Leadership Team</a></li>
+		</ul>
+	</div>
+</aside>
+			</div>
+
+			<div class="three columns">
+				<aside class="widget widget_text group">
+	<h3 class="widget-title">Text Widget</h3>
+	<p>Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus.</p>
+</aside><!-- /widget -->
+			</div>
+
+			<div class="three columns">
+				<aside class="widget widget_ci_flickr_widget group">
+	<h3 class="widget-title">Flickr</h3>
+	<div class="f group">
+		<div class="flickr_badge_image">
+			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
+		</div>
+		<div class="flickr_badge_image">
+			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
+		</div>
+		<div class="flickr_badge_image">
+			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
+		</div>
+		<div class="flickr_badge_image">
+			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
+		</div>
+		<div class="flickr_badge_image">
+			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
+		</div>
+		<div class="flickr_badge_image">
+			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
+		</div>
+	</div>
+</aside>
+			</div>
+
+			<div class="three columns">
+				<aside class="widget widget_search group">
+	<h3 class="widget-title">Search</h3>
+
+<form action="/" method="get" role="search" class="searchform">
+	<div>
+		<label for="s" class="screen-reader-text">Search for:    </label>
+		<input type="text" id="s" name="s" value="" placeholder="Search">
+		<button type="submit" class="searchsubmit"><i class="icon-search"></i></button>
+	</div>
+</form>
+</aside>
+				<aside class="widget widget_text group">
+	<h3 class="widget-title">Text Widget</h3>
+	<p>Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus.</p>
+</aside><!-- /widget -->
+			</div>
+		</div>
+	</div>
+
+	<div class="credits">
+		<div class="row">
+			<div class="twelve columns">
+				<span>&copy; 2014. Sureka Group</span>
+				<span id="footlinks" style="float: right;">
+					<span><a href="http://www.surekagroup.com">Home</a></span>
+					<span><a href="privacy.html">Privacy</a></span>
+					<span style="white-space:nowrap;"><a href="disclaimer.html">Legal Disclaimer</a></span>
+					<span style="white-space:nowrap;"><a href="tos.html">Terms of Service</a></span>
+					<span><a href="feedback.html">Feedback</a></span>
+					<span><a href="help.html">Help</a></span>
+				</span>
+			</div>
+		</div>
+	</div>
+</footer>
+</div> <!-- #page -->
+
+<!-- Javascript
+================================================== -->
+<script src='js/jquery-1.10.1.min.js'></script>
+<script src='js/superfish.js'></script>
+<script src='js/jquery.flexslider-min.js'></script>
+<script src='js/jquery.mmenu.min.js'></script>
+<script src='js/fancybox/source/jquery.fancybox.pack.js'></script>
+<script src='js/scripts.js'></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="js/selectivizr-min.js"></script>
+<![endif]-->
+</body>
+</html>

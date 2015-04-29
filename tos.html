@@ -1,0 +1,312 @@
+<!doctype html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Home &ndash; Sureka Group</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel='stylesheet' href='css/flexslider.css'>
+<link rel='stylesheet' href='css/font-awesome.min.css'>
+<link rel='stylesheet' href='js/fancybox/source/jquery.fancybox.css'>
+<link rel='stylesheet' href='css/base.css'>
+<link rel='stylesheet' href='style.css'>
+<link rel='stylesheet' href='css/mediaqueries.css'>
+<link rel='stylesheet' href='colors/sureka.css'>
+<style>
+#footlinks span{
+	margin-left: 3em;
+}
+</style>
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="">
+	<link rel="apple-touch-icon" href="">
+	<link rel="apple-touch-icon" sizes="72x72" href="">
+	<link rel="apple-touch-icon" sizes="114x114" href="">
+
+	<script src="js/modernizr.js"></script>
+
+	
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+</head>
+<body>
+
+<div id="mobile-bar">
+	<a class="menu-trigger" href="#mobilemenu"></a>
+	<h1 class="mob-title">Home</h1>
+</div>
+
+<div id="page">
+
+	<header id="header">
+		<div id="top-head">
+			<div class="row">
+				<div class="six columns">
+					<span>Emergency telephone number: 800&ndash;800&ndash;555</span>
+				</div>
+
+				<div class="six columns">
+					<!-- socials -->
+				</div>
+			</div>
+		</div> <!-- #tophead -->
+
+		<div id="main-head">
+			<div class="row">
+				<div id="logo" class="four columns">
+					<img src="images/sg_logo.png" />
+					
+				</div>
+
+				<div class="eight columns">
+					<nav id="nav">
+	<ul id="navigation" class="group">
+		<li class="current-menu-item">
+			<a href="index.html">Home</a>
+		</li>
+		<li>
+			<a href="#">About Us</a>
+			<ul>
+				<li><a href="overview.html">Overview</a></li>
+				<li><a href="vision_values.html">Vision and Values</a></li>
+				<li><a href="brand.html">Brand</a></li>
+				<li><a href="leadership_team.html">Leadership Team</a></li>
+				<li><a href="heritage.html">Heritage</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Businesses</a>
+			<ul>
+				<li><a href="companies.html">Companies</a></li>
+				<li><a href="sectors.html">Sectors</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="csr.html">CSR</a>
+		</li>
+		<li>
+			<a href="#">Media</a>
+			<ul>
+				<li><a href="press_releases.html">Press Releases</a></li>
+				<li><a href="news.html">Sureka in the News</a></li>
+				<li><a href="press_kit.html">Press Kit</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Careers</a>
+			<ul>
+				<li><a href="apply.html">Apply</a></li>
+				<li><a href="life_at_sureka.html">Life at Sureka</a></li>
+				<li><a href="retirees.html">Retirees</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="contact.html">Contact</a>
+		</li>
+	</ul><!-- #navigation -->
+</nav><!-- #nav -->
+
+<div id="mobilemenu">
+<ul class="group">
+	<li class="current-menu-item">
+		<a href="#">Home</a>
+		<ul>
+			<li><a href="#">Normal</a></li>
+			<li><a href="#">Alternative</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="#">Menu Item</a>
+		<ul>
+			<li><a href="#">Submenu Item I</a></li>
+			<li><a href="#">Submenu Item II</a></li>
+			<li><a href="#">Submenu Item Little Longer</a></li>
+			<li><a href="#">Submenu Item</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="#">Menu Item Longer</a>
+		<ul>
+			<li><a href="#">Submenu Item I</a></li>
+			<li><a href="#">Submenu Item II</a>
+				<ul>
+					<li><a href="#">Third Level Menu Item</a></li>
+					<li><a href="#">Menu Item</a>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#">Menu Item</a>
+	</li>
+</ul>
+</div>
+				</div>
+			</div> <!-- #mainhead -->
+		</div>
+	</header>
+
+	<main id="content" class="nopad">
+		<section class="home-wgt-area">
+			<div class="row">
+				<div class="twelve columns">
+        			<h1>Sureka Group Terms of Service ("Agreement")</h1>
+        			<p>This Agreement was last modified on May 20, 2014.</p>
+
+        			<p>Please read these Terms of Service ("Agreement", "Terms of Service") carefully before using http://www.surekagroup.com ("the Site") operated by Park Chambers Ltd. ("us", "we", or "our"). This Agreement sets forth the legally binding terms and conditions for your use of the Site at http://www.surekagroup.com/.</p>
+        			<p>By accessing or using the Site in any manner, including, but not limited to, visiting or browsing the Site or contributing content or other materials to the Site, you agree to be bound by these Terms of Service. Capitalized terms are defined in this Agreement.</p>
+
+        			<p><strong>Intellectual Property</strong><br />The Site and its original content, features and functionality are owned by Park Chambers Ltd. and are protected by international copyright, trademark, patent, trade secret and other intellectual property or proprietary rights laws.</p>
+
+        			<p><strong>Termination</strong><br />We may terminate your access to the Site, without cause or notice, which may result in the forfeiture and destruction of all information associated with you. All provisions of this Agreement that by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity, and limitations of liability.</p>
+
+        			<p><strong>Links To Other Sites</strong><br />Our Site may contain links to third-party sites that are not owned or controlled by Park Chambers Ltd.</p>
+        			<p>Park Chambers Ltd. has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party sites or services. We strongly advise you to read the terms and conditions and privacy policy of any third-party site that you visit.</p>
+
+        			<p><strong>Governing Law</strong><br />This Agreement (and any further rules, polices, or guidelines incorporated by reference) shall be governed and construed in accordance with the laws of West Bengal, India, without giving effect to any principles of conflicts of law.</p>
+
+        			<p><strong>Changes To This Agreement</strong><br />We reserve the right, at our sole discretion, to modify or replace these Terms of Service by posting the updated terms on the Site. Your continued use of the Site after any such changes constitutes your acceptance of the new Terms of Service.</p>
+        			<p>Please review this Agreement periodically for changes. If you do not agree to any of this Agreement or any changes to this Agreement, do not use, access or continue to access the Site or discontinue any use of the Site immediately.</p>
+
+        			<p><strong>Contact Us</strong><br />If you have any questions about this Agreement, please contact us.</p>
+
+        			<p style="font-size: 85%; color: #999;">With permission from <a href="http://termsfeed.com/terms-service/generator/" title="TermsFeed - the Privacy Policy generator" style="color: #999; text-decoration: none;">TermsFeed</a></p>
+					
+				</div>
+			</div>
+			
+		</section>
+	</main>
+
+
+<footer id="footer">
+	<div class="footer-inner">
+		<div class="row">
+			<div class="three columns">
+				<aside class="widget widget_ci_about group">
+	<h3 class="widget-title">Relevant Links</h3>
+	<div class="widget_about group">
+		<ul>
+			<li><a href="">Vision and Values</a></li>
+			<li><a href="">Heritage</a></li>
+			<li><a href="">Leadership Team</a></li>
+		</ul>
+	</div>
+</aside>
+			</div>
+
+			<div class="three columns">
+				<aside class="widget widget_text group">
+	<h3 class="widget-title">Text Widget</h3>
+	<p>Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus.</p>
+</aside><!-- /widget -->
+			</div>
+
+			<div class="three columns">
+				<aside class="widget widget_ci_flickr_widget group">
+	<h3 class="widget-title">Flickr</h3>
+	<div class="f group">
+		<div class="flickr_badge_image">
+			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
+		</div>
+		<div class="flickr_badge_image">
+			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
+		</div>
+		<div class="flickr_badge_image">
+			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
+		</div>
+		<div class="flickr_badge_image">
+			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
+		</div>
+		<div class="flickr_badge_image">
+			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
+		</div>
+		<div class="flickr_badge_image">
+			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
+		</div>
+	</div>
+</aside>
+			</div>
+
+			<div class="three columns">
+				<aside class="widget widget_search group">
+	<h3 class="widget-title">Search</h3>
+
+<form action="/" method="get" role="search" class="searchform">
+	<div>
+		<label for="s" class="screen-reader-text">Search for:    </label>
+		<input type="text" id="s" name="s" value="" placeholder="Search">
+		<button type="submit" class="searchsubmit"><i class="icon-search"></i></button>
+	</div>
+</form>
+</aside>
+				<aside class="widget widget_text group">
+	<h3 class="widget-title">Text Widget</h3>
+	<p>Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus.</p>
+</aside><!-- /widget -->
+			</div>
+		</div>
+	</div>
+
+	<div class="credits">
+		<div class="row">
+			<div class="twelve columns">
+				<span>&copy; 2014. Sureka Group</span>
+				<span id="footlinks" style="float: right;">
+					<span><a href="http://www.surekagroup.com">Home</a></span>
+					<span><a href="privacy.html">Privacy</a></span>
+					<span style="white-space:nowrap;"><a href="disclaimer.html">Legal Disclaimer</a></span>
+					<span style="white-space:nowrap;"><a href="tos.html">Terms of Service</a></span>
+					<span><a href="feedback.html">Feedback</a></span>
+					<span><a href="help.html">Help</a></span>
+				</span>
+			</div>
+		</div>
+	</div>
+</footer>
+</div> <!-- #page -->
+
+<!-- Javascript
+================================================== -->
+<script src='js/jquery-1.10.1.min.js'></script>
+<script src='js/superfish.js'></script>
+<script src='js/jquery.flexslider-min.js'></script>
+<script src='js/jquery.mmenu.min.js'></script>
+<script src='js/fancybox/source/jquery.fancybox.pack.js'></script>
+<script src='js/scripts.js'></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="js/selectivizr-min.js"></script>
+<![endif]-->
+</body>
+</html>

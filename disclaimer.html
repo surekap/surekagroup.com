@@ -1,0 +1,308 @@
+<!doctype html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Home &ndash; Sureka Group</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel='stylesheet' href='css/flexslider.css'>
+<link rel='stylesheet' href='css/font-awesome.min.css'>
+<link rel='stylesheet' href='js/fancybox/source/jquery.fancybox.css'>
+<link rel='stylesheet' href='css/base.css'>
+<link rel='stylesheet' href='style.css'>
+<link rel='stylesheet' href='css/mediaqueries.css'>
+<link rel='stylesheet' href='colors/sureka.css'>
+<style>
+#footlinks span{
+	margin-left: 3em;
+}
+</style>
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="">
+	<link rel="apple-touch-icon" href="">
+	<link rel="apple-touch-icon" sizes="72x72" href="">
+	<link rel="apple-touch-icon" sizes="114x114" href="">
+
+	<script src="js/modernizr.js"></script>
+
+	
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+</head>
+<body>
+
+<div id="mobile-bar">
+	<a class="menu-trigger" href="#mobilemenu"></a>
+	<h1 class="mob-title">Home</h1>
+</div>
+
+<div id="page">
+
+	<header id="header">
+		<div id="top-head">
+			<div class="row">
+				<div class="six columns">
+					<span>Emergency telephone number: 800&ndash;800&ndash;555</span>
+				</div>
+
+				<div class="six columns">
+					<!-- socials -->
+				</div>
+			</div>
+		</div> <!-- #tophead -->
+
+		<div id="main-head">
+			<div class="row">
+				<div id="logo" class="four columns">
+					<img src="images/sg_logo.png" />
+					
+				</div>
+
+				<div class="eight columns">
+					<nav id="nav">
+	<ul id="navigation" class="group">
+		<li class="current-menu-item">
+			<a href="index.html">Home</a>
+		</li>
+		<li>
+			<a href="#">About Us</a>
+			<ul>
+				<li><a href="overview.html">Overview</a></li>
+				<li><a href="vision_values.html">Vision and Values</a></li>
+				<li><a href="brand.html">Brand</a></li>
+				<li><a href="leadership_team.html">Leadership Team</a></li>
+				<li><a href="heritage.html">Heritage</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Businesses</a>
+			<ul>
+				<li><a href="companies.html">Companies</a></li>
+				<li><a href="sectors.html">Sectors</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="csr.html">CSR</a>
+		</li>
+		<li>
+			<a href="#">Media</a>
+			<ul>
+				<li><a href="press_releases.html">Press Releases</a></li>
+				<li><a href="news.html">Sureka in the News</a></li>
+				<li><a href="press_kit.html">Press Kit</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Careers</a>
+			<ul>
+				<li><a href="apply.html">Apply</a></li>
+				<li><a href="life_at_sureka.html">Life at Sureka</a></li>
+				<li><a href="retirees.html">Retirees</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="contact.html">Contact</a>
+		</li>
+	</ul><!-- #navigation -->
+</nav><!-- #nav -->
+
+<div id="mobilemenu">
+<ul class="group">
+	<li class="current-menu-item">
+		<a href="#">Home</a>
+		<ul>
+			<li><a href="#">Normal</a></li>
+			<li><a href="#">Alternative</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="#">Menu Item</a>
+		<ul>
+			<li><a href="#">Submenu Item I</a></li>
+			<li><a href="#">Submenu Item II</a></li>
+			<li><a href="#">Submenu Item Little Longer</a></li>
+			<li><a href="#">Submenu Item</a></li>
+		</ul>
+	</li>
+	<li>
+		<a href="#">Menu Item Longer</a>
+		<ul>
+			<li><a href="#">Submenu Item I</a></li>
+			<li><a href="#">Submenu Item II</a>
+				<ul>
+					<li><a href="#">Third Level Menu Item</a></li>
+					<li><a href="#">Menu Item</a>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#">Menu Item</a>
+	</li>
+</ul>
+</div>
+				</div>
+			</div> <!-- #mainhead -->
+		</div>
+	</header>
+
+	<main id="content" class="nopad">
+		<section class="home-wgt-area">
+			<div class="row">
+				<div class="twelve columns">
+        			<h2>
+        				Legal disclaimer
+        			</h2>
+        			<p>
+        				SUREKA GROUP retains copyright on all the text, contents, graphics and trademarks displayed on this site. All the text, graphics and trademarks displayed on this site are owned by SUREKA GROUP.
+        			</p>
+        			<p>
+        				The information on this site has been included in good faith and is for general purpose only and should not be relied upon for any specific purpose. The user shall not distribute text or graphics to others without the express written consent of SUREKA GROUP. The user shall also not, without SUREKA GROUP’s prior permission, copy and distribute this information on any other server, or modify or reuse text or graphics on this or any another system.
+        			</p>
+        			<p>
+        				Although SUREKA GROUP tries to ensure that all information and recommendations, whether in relation to the products, services, offerings or otherwise (hereinafter "information"), provided as part of this website is correct at the time of inclusion on the web site, SUREKA GROUP does not guarantee the accuracy of the Information. SUREKA GROUP makes no representations or warranties as to the completeness or accuracy of Information. Certain links in this site connect to other Web Sites maintained by third parties over whom SUREKA GROUP has no control. SUREKA GROUP makes no representations as to the accuracy or any other aspect of information contained in such other Web Sites.
+        			</p>
+        			<p>
+        				SUREKA GROUP hereby disclaims all warranties and conditions with regard to this information, including all implied warranties and conditions of merchantability, fitness for any particular purpose, title and non-infringement. In no event will SUREKA GROUP, its related partnerships or corporations, or the partners, agents or employees thereof be liable for any decision made by the user and/or site visitor for any inference or action taken in reliance on the information provided in this site or for any consequential, special or similar damages. Applicable Law and Jurisdiction of this Disclaimer are governed by and to be interpreted in accordance with laws of India, without regard to the choice or conflicts of law provisions of any jurisdiction. The user/site visitor agrees that in the event of any dispute arising in relation to this Disclaimer or any dispute arising in relation to the web site whether in contract or tort or otherwise, to submit to the jurisdiction of the courts located at Kolkata (West Bengal) (India) only for the resolution of all such disputes.
+        			</p>
+        			<p>
+        				Except for the historical information herein, statement in this website, which includes words or phrases such as “will”, “aim”, “will likely result”, “would”, “believe”, “may”, “expect”, “will continue”, “anticipate”, “estimate”, “intend”, “plan”, “contemplate”, “seek to “, “future”, “objective”, “goal”, “likely”, “project”, “should”, “potential”, “will pursue”, and similar expressions or variations of such expressions may constitute “forward-looking statements”. These forward-looking statements involve a number of risks, uncertainties and other factors that could cause actual results to differ materially from those suggested by the forward-looking statements. These risks and uncertainties include, but are not limited to our liability to successfully implement our strategy, our growth and expansion plans, obtain regulatory approvals, our provisioning policies, technological changes, investment and business income, cash flow projections, our exposure to the market risks as well as other risks. The company does not undertake any obligation to update forward-looking statements to reflect events or circumstances after the date thereof.
+        			</p>
+				</div>
+			</div>
+			
+		</section>
+	</main>
+
+
+<footer id="footer">
+	<div class="footer-inner">
+		<div class="row">
+			<div class="three columns">
+				<aside class="widget widget_ci_about group">
+	<h3 class="widget-title">Relevant Links</h3>
+	<div class="widget_about group">
+		<ul>
+			<li><a href="">Vision and Values</a></li>
+			<li><a href="">Heritage</a></li>
+			<li><a href="">Leadership Team</a></li>
+		</ul>
+	</div>
+</aside>
+			</div>
+
+			<div class="three columns">
+				<aside class="widget widget_text group">
+	<h3 class="widget-title">Text Widget</h3>
+	<p>Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus.</p>
+</aside><!-- /widget -->
+			</div>
+
+			<div class="three columns">
+				<aside class="widget widget_ci_flickr_widget group">
+	<h3 class="widget-title">Flickr</h3>
+	<div class="f group">
+		<div class="flickr_badge_image">
+			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
+		</div>
+		<div class="flickr_badge_image">
+			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
+		</div>
+		<div class="flickr_badge_image">
+			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
+		</div>
+		<div class="flickr_badge_image">
+			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
+		</div>
+		<div class="flickr_badge_image">
+			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
+		</div>
+		<div class="flickr_badge_image">
+			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
+		</div>
+	</div>
+</aside>
+			</div>
+
+			<div class="three columns">
+				<aside class="widget widget_search group">
+	<h3 class="widget-title">Search</h3>
+
+<form action="/" method="get" role="search" class="searchform">
+	<div>
+		<label for="s" class="screen-reader-text">Search for:    </label>
+		<input type="text" id="s" name="s" value="" placeholder="Search">
+		<button type="submit" class="searchsubmit"><i class="icon-search"></i></button>
+	</div>
+</form>
+</aside>
+				<aside class="widget widget_text group">
+	<h3 class="widget-title">Text Widget</h3>
+	<p>Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus.</p>
+</aside><!-- /widget -->
+			</div>
+		</div>
+	</div>
+
+	<div class="credits">
+		<div class="row">
+			<div class="twelve columns">
+				<span>&copy; 2014. Sureka Group</span>
+				<span id="footlinks" style="float: right;">
+					<span><a href="http://www.surekagroup.com">Home</a></span>
+					<span><a href="privacy.html">Privacy</a></span>
+					<span style="white-space:nowrap;"><a href="disclaimer.html">Legal Disclaimer</a></span>
+					<span style="white-space:nowrap;"><a href="tos.html">Terms of Service</a></span>
+					<span><a href="feedback.html">Feedback</a></span>
+					<span><a href="help.html">Help</a></span>
+				</span>
+			</div>
+		</div>
+	</div>
+</footer>
+</div> <!-- #page -->
+
+<!-- Javascript
+================================================== -->
+<script src='js/jquery-1.10.1.min.js'></script>
+<script src='js/superfish.js'></script>
+<script src='js/jquery.flexslider-min.js'></script>
+<script src='js/jquery.mmenu.min.js'></script>
+<script src='js/fancybox/source/jquery.fancybox.pack.js'></script>
+<script src='js/scripts.js'></script>
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="js/selectivizr-min.js"></script>
+<![endif]-->
+</body>
+</html>
