@@ -1,560 +1,195 @@
 <!doctype html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sureka Group Corporate Website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Basic Page Needs
-  ================================================== -->
-	<meta charset="utf-8">
-	<title>Home &ndash; Sureka Group</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-	<!-- CSS
-  ================================================== -->
-	<link rel='stylesheet' href='css/flexslider.css'>
-<link rel='stylesheet' href='css/font-awesome.min.css'>
-<link rel='stylesheet' href='js/fancybox/source/jquery.fancybox.css'>
-<link rel='stylesheet' href='css/base.css'>
-<link rel='stylesheet' href='style.css'>
-<link rel='stylesheet' href='css/mediaqueries.css'>
-<link rel='stylesheet' href='colors/sureka.css'>
-<style>
-#footlinks span{
-	margin-left: 3em;
-}
-</style>
-
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="">
-	<link rel="apple-touch-icon" href="">
-	<link rel="apple-touch-icon" sizes="72x72" href="">
-	<link rel="apple-touch-icon" sizes="114x114" href="">
-
-	<!-- <script type='text/javascript' src='http://maps.googleapis.com/maps/api/js?sensor=false'></script> -->
-
-	<script src="js/modernizr.js"></script>
-
-	
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link'); 
-                    for (var i = 0; i < links.length;i++) { 
-                    var link = links[i]; 
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
-</head>
-<body>
-
-<div id="mobile-bar">
-	<a class="menu-trigger" href="#mobilemenu"></a>
-	<h1 class="mob-title">Home</h1>
-</div>
-
-<div id="page">
-
-	<header id="header">
-		<div id="top-head">
-			<div class="row">
-				<div class="six columns">
-					<span>Emergency telephone number: 800&ndash;800&ndash;555</span>
-				</div>
-
-				<div class="six columns">
-					<!-- socials -->
-				</div>
-			</div>
-		</div> <!-- #tophead -->
-
-		<div id="main-head">
-			<div class="row">
-				<div id="logo" class="four columns">
-					<img src="images/sg_logo.png" />
-					
-				</div>
-
-				<div class="eight columns">
-					<nav id="nav">
-	<ul id="navigation" class="group">
-		<li class="current-menu-item">
-			<a href="index.html">Home</a>
-		</li>
-		<li>
-			<a href="#">About Us</a>
-			<ul>
-				<li><a href="overview.html">Overview</a></li>
-				<li><a href="vision_values.html">Vision and Values</a></li>
-				<li><a href="brand.html">Brand</a></li>
-				<li><a href="leadership_team.html">Leadership Team</a></li>
-				<li><a href="heritage.html">Heritage</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="#">Businesses</a>
-			<ul>
-				<li><a href="companies.html">Companies</a></li>
-				<li><a href="sectors.html">Sectors</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="csr.html">CSR</a>
-		</li>
-		<li>
-			<a href="#">Media</a>
-			<ul>
-				<li><a href="press_releases.html">Press Releases</a></li>
-				<li><a href="news.html">Sureka in the News</a></li>
-				<li><a href="press_kit.html">Press Kit</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="#">Careers</a>
-			<ul>
-				<li><a href="apply.html">Apply</a></li>
-				<li><a href="life_at_sureka.html">Life at Sureka</a></li>
-				<li><a href="retirees.html">Retirees</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="contact.html">Contact</a>
-		</li>
-	</ul><!-- #navigation -->
-</nav><!-- #nav -->
-
-<div id="mobilemenu">
-<ul class="group">
-	<li class="current-menu-item">
-		<a href="#">Home</a>
-		<ul>
-			<li><a href="#">Normal</a></li>
-			<li><a href="#">Alternative</a></li>
-		</ul>
-	</li>
-	<li>
-		<a href="#">Menu Item</a>
-		<ul>
-			<li><a href="#">Submenu Item I</a></li>
-			<li><a href="#">Submenu Item II</a></li>
-			<li><a href="#">Submenu Item Little Longer</a></li>
-			<li><a href="#">Submenu Item</a></li>
-		</ul>
-	</li>
-	<li>
-		<a href="#">Menu Item Longer</a>
-		<ul>
-			<li><a href="#">Submenu Item I</a></li>
-			<li><a href="#">Submenu Item II</a>
-				<ul>
-					<li><a href="#">Third Level Menu Item</a></li>
-					<li><a href="#">Menu Item</a>
-				</ul>
-			</li>
-		</ul>
-	</li>
-	<li>
-		<a href="#">Menu Item</a>
-	</li>
-</ul>
-</div>
-				</div>
-			</div> <!-- #mainhead -->
-		</div>
-	</header>
-
-	<div id="home-slider-container">
-		<div id="home-slider" class="flexslider">
-			<ul class="slides">
-				<li>
-					<img src='images/sg_brainwave_sec.jpg' width='1920' height='550p' alt='Brainwave Security and Cloud IT Solutions' />
-
-					<div class="slide-content">
-						
-						<div class="controls">
-							<a class="s-prev" href=""><i class="icon-chevron-left"></i></a><a class="s-next" href=""><i class="icon-chevron-right"></i></a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<img src='images/sg_brainwave_social.jpg' width='1920' height='550p' alt='Brainwave Social Media Outsourcing' />
-
-					<div class="slide-content">
-						
-						<div class="controls">
-							<a class="s-prev" href=""><i class="icon-chevron-left"></i></a><a class="s-next" href=""><i class="icon-chevron-right"></i></a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<img src='images/sg_crystals.jpg' width='1920' height='550p' alt='Commercial Office Complex: Crystals - Attrition Free Environment' />
-
-					<div class="slide-content">
-						
-						<div class="controls">
-							<a class="s-prev" href=""><i class="icon-chevron-left"></i></a><a class="s-next" href=""><i class="icon-chevron-right"></i></a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<img src='images/sg_forever_jajpur.jpg' width='1920' height='550p' alt='Affordable Housing - Forever Homes - Kalinganagar, Odisha' />
-
-					<div class="slide-content">
-						
-						<div class="controls">
-							<a class="s-prev" href=""><i class="icon-chevron-left"></i></a><a class="s-next" href=""><i class="icon-chevron-right"></i></a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<img src='images/sg_southcity_mall.jpg' width='1920' height='550p' alt='Malls - South City Mall' />
-
-					<div class="slide-content">
-						
-						<div class="controls">
-							<a class="s-prev" href=""><i class="icon-chevron-left"></i></a><a class="s-next" href=""><i class="icon-chevron-right"></i></a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<img src='images/sg_southcity_altair.jpg' width='1920' height='550p' alt='Iconic Design - 68 storey tower in downtown Colombo, Sri Lanka' />
-
-					<div class="slide-content">
-						
-						<div class="controls">
-							<a class="s-prev" href=""><i class="icon-chevron-left"></i></a><a class="s-next" href=""><i class="icon-chevron-right"></i></a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<img src='images/sg_urbana.jpg' width='1920' height='550p' alt='Ultra Luxury - Urbana - Change your world' />
-
-					<div class="slide-content">
-						
-						<div class="controls">
-							<a class="s-prev" href=""><i class="icon-chevron-left"></i></a><a class="s-next" href=""><i class="icon-chevron-right"></i></a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<img src='images/sg_hartex_freedom.jpg' width='1920' height='550p' alt='Hartex - Manufacture of Bicycle Tyres and Tubes' />
-
-					<div class="slide-content">
-						
-						<div class="controls">
-							<a class="s-prev" href=""><i class="icon-chevron-left"></i></a><a class="s-next" href=""><i class="icon-chevron-right"></i></a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<img src='images/sg_hartex_human.jpg' width='1920' height='550p' alt='Hartex - Manufacture of Bicycle Tyres and Tubes' />
-
-					<div class="slide-content">
-						
-						<div class="controls">
-							<a class="s-prev" href=""><i class="icon-chevron-left"></i></a><a class="s-next" href=""><i class="icon-chevron-right"></i></a>
-						</div>
-					</div>
-				</li>
-				<li>
-					<img src='images/sg_hartex_lifeblood.jpg' width='1920' height='550p' alt='Hartex - Manufacture of Bicycle Tyres and Tubes' />
-
-					<div class="slide-content">
-						
-						<div class="controls">
-							<a class="s-prev" href=""><i class="icon-chevron-left"></i></a><a class="s-next" href=""><i class="icon-chevron-right"></i></a>
-						</div>
-					</div>
-				</li>				
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
 				
-			</ul>
-		</div>
-	</div> <!-- #home-slider-container -->
+				<link rel="stylesheet" href="js/styles/jquery.carousel-3d.default.css">
+				
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+				<style>
+				video#bgvid {
+					position: fixed;
+					top: 50%;
+					left: 50%;
+					min-width: 100%;
+					min-height: 100%;
+					width: auto;
+					height: auto;
+					z-index: -100;
+					-webkit-transform: translateX(-50%) translateY(-50%);
+					transform: translateX(-50%) translateY(-50%);
+					background: url(polina.jpg) no-repeat;
+					background-size: cover;
+					display: block;
+				}
+				@media screen and (max-device-width: 800px) {
+					body { background: url(polina.jpg) #000 no-repeat center center fixed; }
+					#bgvid { display: none; }
+				}
+				
+				
+				.pane{
+					background-color: #333;
+					opacity: 0.2;
+					width: 750px;
+					height: 400px;
+					margin: 0 auto;
+					margin-top: 20%;
+					color: #fff;
+					padding: 1em;
+					border-radius: 10px;
+					
+					transition: opacity .25s ease-in-out;
+					  -moz-transition: opacity .25s ease-in-out;
+					  -webkit-transition: opacity .25s ease-in-out;
+				}
+				
+				.pane a{
+					color: #fff;
+					text-decoration: none;
+					display: block;
+					text-align: center;
+				}
+				
+				.pane a p{
+					z-index: 25;
+					width: 95%;
+					opacity: 0.7;
+					background-color: #000;
+					margin-top: -3.8em;
+					height: 2.8em;
+					padding: 0.5em;
+				}
+				
+				[data-carousel-3d] img{
+					height: 220px;
+				}
+				
+				[data-carousel-3d] div.item{
+					min-width: 320px; min-height: 213px; max-width: 320px; max-height: 213px;
+					border: 0;
+				}
+				</style>
+    </head>
+    <body>
+				<!--[if lt IE 9]>
+				<script>
+				document.createElement('video');
+				</script>
+				<![endif]-->
+				
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-	<main id="content" class="nopad">
-		<section class="home-wgt-area">
-			<div class="row">
-				<div class="three columns">
-					<div class="widget widget_text group">
-						<h3 class="widget-title">About Us</h3>
-						<p>A 1000 crore group with interests in manufacturing, real estate and information technology, the Sureka Group is a 53 year old enterprise which employs over 6000 people.</p>
-
-						<a class="btn" href="">View all services</a>
-					</div><!-- /widget -->
-				</div>
-
-				<div class="three columns">
-					<div class="widget ci_widget_item_widget">
-						<a href="" class="item-thumb">
-							<img src='images/brand-book.png' width='480' height='480' alt='Sureka Brand Manual' />
-							<h3>New Sureka Identity</h3>
-						</a>
-
-						<p>On occasion of its 50th Anniversary, Sureka unveils its new logo and brand identity.</p>
-					</div>
-				</div>
-
-				<div class="three columns">
-					<div class="widget ci_widget_item_widget">
-						<a href="" class="item-thumb">
-							<img src='images/forever-homes.png' width='480' height='480p' alt='Placeholder Image' />
-							<h3>Forever Brand</h3>
-						</a>
-
-						<p>Sureka and Merlin launch a joint venture - Forever Group - in Odisha with its first project "Forever Homes"</p>
-					</div>
-				</div>
-
-				<div class="three columns">
-					<div class="widget ci_widget_item_widget">
-						<a href="" class="item-thumb">
-							<img src='images/hartex-lcd.jpg' width='480' height='480p' alt='Placeholder Image' />
-							<h3>Hartex announces record lows in boiler pollution levels</h3>
-						</a>
-
-						<p>On February 20th, Hartex achieved a record low Suspended Particulate Matter (SPM) level of 9.4 Mg/Nm<sup>3</sup> against an industry standard of 150 Mg/Nm<sup>3</sup></p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="home-wgt-area">
-			<div class="row">
-				<div class="twelve columns">
-					<div class="widget widget_ci_callout_widget">
-						<h3 class="widget-title">We'd love to take care of you</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cumque eveniet magni modi, quod tempore?</p>
-						<a class="btn callout" href="">Make an appointment</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="home-wgt-area">
-			<div class="row">
-				<div class="three columns">
-					<div class="widget widget_text group">
-						<h3 class="widget-title">Our World</h3>
-						<p>A strong foundation and traditional values is
-							a promise of Sureka as a business group. The planning outlook is such that it spans generations ahead, instead of just a few years.
-						</p>
-						<p>The name Sureka, is an ode to our family name. As descendants of traders, businessmen and merchants who emigrated from deserts to share 
-							their knowledge and prosperity with the rest of the country, we are determined to carry on the tradition.
-						</p>
-						<p>As our group completes its 50th year, our pride and joy has no bounds knowing that not only have we built a successful industry 
-							with over 2000 employees, a distribution network of 6000 dealers, 56 offices and operations spanning 3 continents, but also landmark 
-							housing and buildings which have stood the test of time. We look forward to creating sustainable social development and safeguarding 
-							our environment to build a better world for generations to come.
-						</p>
-
-						<a class="btn" href="">Leadership Team</a>
-					</div><!-- /widget -->
-				</div>
-
-				<div class="three columns">
-					<div class="widget ci_widget_item_widget">
-						<a href="" class="item-thumb">
-							<img src='images/aconex-collaboration.png' width='480' height='480p' alt='Aconex Collaboration' />
-							<h3>Sureka implements construction collaboration software</h3>
-						</a>
-
-						<p>Aconex is the most widely-used online collaboration platform in the world for construction, infrastructure, energy and resources projects. It will help us to manage project information and processes to the highest standard.</p>
-					</div>
-				</div>
-
-				<div class="three columns">
-					<div class="widget ci_widget_item_widget">
-						<a href="" class="item-thumb">
-							<img src='images/brainwave-reflections.jpg' width='480' height='480p' alt='Brainwave bags digital media contract' />
-							<h3>Brainwave manages Reflections, Chennai digital media</h3>
-						</a>
-
-						<p>Brainwave won the contract to manage the social media and SEO activities of the Reflections project in Chennai. Reflections is a 1.5 million sq. ft. project promoted by the Olympia and Merlin group.</p>
-					</div>
-				</div>
-
-				<div class="three columns">
-					<div class="widget ci_widget_item_widget">
-						<a href="" class="item-thumb">
-							<img src='images/hartex-ludhiana.jpg' width='480' height='480p' alt='Hartex, Ludhiana' />
-							<h3>Hartex plans to set up new tyre plant</h3>
-						</a>
-
-						<p>Hartex Rubber is setting up a new export oriented bicycle tyre plant in Ludhiana, Punjab. Close proximity to the bicycle manufacturers and easy access to ports in Gujarat and Maharashtra will enable Hartex to double its capacity in two years.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<div class="row">
-			<div class="twelve columns">
-				<hr>
-			</div>
-		</div>
-		<section class="home-wgt-area">
-			<div class="row">
-				<div class="three columns">
-					<div class="widget widget_ci_schedule_widget">
-						<h3 class="widget-title">Opening Hours</h3>
-						<table class="opening-hours">
-							<tr>
-								<th>Monday &ndash; Tuesday</th>
-								<td>09.00 &ndash; 21.00</td>
-							</tr>
-
-							<tr>
-								<th>Monday &ndash; Tuesday</th>
-								<td>09.00 &ndash; 21.00</td>
-							</tr>
-
-							<tr>
-								<th>Monday &ndash; Tuesday</th>
-								<td>09.00 &ndash; 21.00</td>
-							</tr>
-
-							<tr>
-								<th>Monday &ndash; Tuesday</th>
-								<td>09.00 &ndash; 21.00</td>
-							</tr>
-						</table>
-
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In ipsa mollitia neque sed, sunt tenetur.</p>
-					</div>
-				</div>
-
-				<div class="nine columns">
-					<div class="widget ci_widget_testimonials_widget">
-						<h3 class="widget-title">They said about us</h3>
-						<div class="row">
-							<div class="four columns">
-								<a href="" class="item-thumb">
-									<img src='http://placehold.it/480x480p' width='480' height='480p' alt='Placeholder Image' />
-									<h3>Dave Johnson</h3>
+        <!-- Add your site or application content here -->
+				<video autoplay loop muted poster="polina.jpg" id="bgvid">
+					<source src="video/sureka-header.webm" type="video/webm">
+					<source src="video/sureka-header.mp4" type="video/mp4">
+				</video>
+        
+				<div id="content" class="pane">
+					<div class="wrapper">
+					  <div data-carousel-3d style="background:none;border:none;">
+					    <div class="item">
+								<a href="http://www.hartex.in/">
+									<img src="img/sg_hartex_lifeblood.jpg" selected />
+						      <p>Manufacturers of Bicycle tyres and tubes</p>
 								</a>
-							</div>
-
-							<div class="eight columns">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores assumenda aut debitis doloribus in ipsam modi nesciunt nulla ratione repellat saepe sed, soluta voluptatum. Saepe!</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet animi consectetur, cupiditate excepturi exercitationem id, impedit ipsum magni pariatur, provident reiciendis soluta veniam! A corporis iure officiis quae quas quidem voluptate?</p>
-							</div>
-						</div>
+					    </div>
+							
+					    <div class="item">
+								<a href="http://www.brainwavelive.com/">
+									<img src="img/sg_brainwave_social.jpg" />
+						      <p>Social Media and Digital Presence Services</p>
+								</a>
+					    </div>
+							
+					    <div class="item">
+								<a href="http://www.altair.lk">
+									<img src="img/sg_southcity_altair.jpg" />
+						      <p>Ultra Luxury Development in Colombo, Sri Lanka</p>
+								</a>
+					    </div>
+							
+					    <div class="item">
+								<a href="http://www.elita.in/">
+									<img src="img/sg_egv.jpg" />
+						      <p>Elita Garden Vista: New York in New Town, Rajarhat</p>
+								</a>
+					    </div>
+							
+					    <div class="item">
+								<a href="http://www.southcitymall.in/">
+									<img src="img/sg_southcity_mall.jpg" />
+						      <p>Largest Mall in Eastern India</p>
+								</a>
+					    </div>
+							
+					    <div class="item">
+								<a href="http://www.springville.in/">
+									<img src="img/sg_springville.jpg" />
+						      <p>Affordable Housing in the steel industrial heartland of Odisha</p>
+								</a>
+					    </div>
+							
+					    <div class="item">
+								<a href="http://www.urbana.co.in/">
+									<img src="img/sg_urbana.jpg" />
+						      <p>Change your world - luxury living in Kolkata</p>
+								</a>
+					    </div>
+							
+					  </div>
+					</div>
+					
+					<div style="text-align:left;">
+						<h3>Investor Updates</h3>
+						<p>
+							<a href="pcl/" style="display:inline-block;">Park Chambers Limited - Statutory Filings</a>
+						</p>
 					</div>
 				</div>
-			</div>
-		</section>
-	</main>
-
-
-<footer id="footer">
-	<div class="footer-inner">
-		<div class="row">
-			<div class="three columns">
-				<aside class="widget widget_ci_about group">
-	<h3 class="widget-title">About Widget</h3>
-	<div class="widget_about group">
-		<img src="http://placehold.it/100x100" class="alignleft" alt="about me">
-		Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh. Donec semper quam scelerisque tortor dictum gravida.
-	</div>
-</aside>
-			</div>
-
-			<div class="three columns">
-				<aside class="widget widget_text group">
-	<h3 class="widget-title">Text Widget</h3>
-	<p>Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus.</p>
-</aside><!-- /widget -->
-			</div>
-
-			<div class="three columns">
-				<aside class="widget widget_ci_flickr_widget group">
-	<h3 class="widget-title">Flickr</h3>
-	<div class="f group">
-		<div class="flickr_badge_image">
-			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
-		</div>
-		<div class="flickr_badge_image">
-			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
-		</div>
-		<div class="flickr_badge_image">
-			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
-		</div>
-		<div class="flickr_badge_image">
-			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
-		</div>
-		<div class="flickr_badge_image">
-			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
-		</div>
-		<div class="flickr_badge_image">
-			<a href="#"><img src="http://farm8.staticflickr.com/7137/7521748724_45bb48910a_s.jpg" alt="A photo on Flickr" title="Coffee &amp; drinks" height="75" width="75"></a>
-		</div>
-	</div>
-</aside>
-			</div>
-
-			<div class="three columns">
-				<aside class="widget widget_search group">
-	<h3 class="widget-title">Search</h3>
-
-<form action="/" method="get" role="search" class="searchform">
-	<div>
-		<label for="s" class="screen-reader-text">Search for:    </label>
-		<input type="text" id="s" name="s" value="" placeholder="Search">
-		<button type="submit" class="searchsubmit"><i class="icon-search"></i></button>
-	</div>
-</form>
-</aside>
-				<aside class="widget widget_text group">
-	<h3 class="widget-title">Text Widget</h3>
-	<p>Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus.</p>
-</aside><!-- /widget -->
-			</div>
-		</div>
-	</div>
-
-	<div class="credits">
-		<div class="row">
-			<div class="twelve columns">
-				<span>&copy; 2014. Sureka Group</span>
-				<span id="footlinks" style="float: right;">
-					<span><a href="http://www.surekagroup.com">Home</a></span>
-					<span><a href="privacy.html">Privacy</a></span>
-					<span style="white-space:nowrap;"><a href="disclaimer.html">Legal Disclaimer</a></span>
-					<span style="white-space:nowrap;"><a href="tos.html">Terms of Service</a></span>
-					<span><a href="feedback.html">Feedback</a></span>
-					<span><a href="help.html">Help</a></span>
-				</span>
-			</div>
-		</div>
-	</div>
-</footer>
-</div> <!-- #page -->
-
-<!-- Javascript
-================================================== -->
-<script src='js/jquery-1.10.1.min.js'></script>
-<script src='js/superfish.js'></script>
-<script src='js/jquery.flexslider-min.js'></script>
-<script src='js/jquery.mmenu.min.js'></script>
-<script src='js/fancybox/source/jquery.fancybox.pack.js'></script>
-<script src='js/scripts.js'></script>
-
-<!--[if (gte IE 6)&(lte IE 8)]>
-<script type="text/javascript" src="js/selectivizr-min.js"></script>
-<![endif]-->
-</body>
+				
+				
+				
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+				
+				
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/1.5.0/jquery.waitforimages.min.js"></script>
+				<script src="js/jquery.carousel-3d.min.js"></script>
+				
+				<script>
+				$(function(){
+					$(".pane").mouseover(function(){
+						$(this).css({'opacity':1.0});
+					}).mouseout(function(){
+						$(this).css({'opacity':0.2});
+					});
+				});
+				</script>
+				
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
 </html>
