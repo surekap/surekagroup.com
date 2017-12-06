@@ -3376,7 +3376,7 @@ section.big-background {
 	font-size: 25px;
 	margin: 0 0 40px;
 	text-transform: none;
-	font-style: italic;
+	font-style: normal;
 	font-weight: 600;
 }
 .big-background-container h2, .big-background-container h5 {
